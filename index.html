@@ -75,20 +75,20 @@
     function compararNumero() {
   let numero = document.getElementById('numero').value;
 
-  if (numero > 20000) {
+  if (numero > 200) {
     document.getElementById('resposta').innerText = `Atenção ${numero} Mantenção atingida.`;
 
 
-  } else if (numero < 23000) {
-    document.getElementById('resposta').innerText = `Maquina liberada para serviço.`;
+  } else if (numero < 100) {
+    document.getElementById('resposta2').innerText = `Maquina liberada para serviço.`;
   } else {
    
   }
 }
 
   </script>
-  <h1>Manutenção - Preditiva
-  <label for="numero">Digite um número acima de 10000:</label>
+  <h1>Controle de Manutenção 
+  <label for="numero">Digite um número acima de 200:</label>
   <label></label>
   <input type="number" id="numero">
   <button onclick="compararNumero()">Resultado</button>
